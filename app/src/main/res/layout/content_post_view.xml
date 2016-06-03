@@ -13,32 +13,36 @@
     tools:showIn="@layout/activity_post_view">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/post_title" />
 
-        <ScrollView
+        <android.support.v4.widget.NestedScrollView
             android:id="@+id/SCROLLER_ID"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:fillViewport="true"
             android:scrollbars="vertical">
 
-
-            <org.sufficientlysecure.htmltextview.HtmlTextView
-                android:id="@+id/post_content"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAppearance="@android:style/TextAppearance.Small" />
+                android:orientation="vertical">
 
-        </ScrollView>
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@android:style/TextAppearance.Small" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
 
 </RelativeLayout>

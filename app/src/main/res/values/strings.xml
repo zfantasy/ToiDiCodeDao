@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Tôi Đi Code Dạo</string>
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_post_view">PostViewActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>
